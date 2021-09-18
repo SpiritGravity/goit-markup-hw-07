@@ -1,0 +1,144 @@
+.header-mail,
+.header-tel,
+.header-link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+    &:hover .header-link,
+    &:focus .header-link {
+        color: #2196F3;
+    }
+}
+.header-link .current {
+color: var(--accent-color);
+}
+.header-list {
+    display: flex;
+}
+.header-navigation {
+    display: flex;
+}
+.header-logo {
+    font-family: Raleway;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    margin-right: 93px;
+    margin-left: auto;
+}
+.accent-logo {
+    color: var(--accent-color); 
+}
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+} 
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .header-list &:focus {
+        color: #2196F3;
+    }
+}
+
+.header-mail {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+
+    margin-right: 50px;
+
+    &:hover,
+    &:focus,
+    &:hover .header-mail-icon,
+    &:focus .header-mail-icon {
+    color: #2196F3;
+    }
+}
+.header-mail-icon {
+    width: 16px;
+    height: 12px;
+    
+    .header-mail:hover &,
+    .header-mail:focus & {
+        fill: #2196F3;
+    }
+}
+.header-tel-icon {
+    width: 10px;
+    height: 16px;
+
+    .header-tel:hover &,
+    .header-tel:focus & {
+        fill: #2196F3;
+    }
+}
+.header-tel .header-tel-icon, .header-mail .header-mail-icon {
+    margin-right: 10px;
+    fill: #757575;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.header-tel  {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:#757575;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:hover .header-tel-icon,
+    &:focus .header-tel-icon {
+    color: #2196F3;
+    }
+}
+.main-nav {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    
+.auth-nav {
+        display: flex;
+        justify-content: flex-end;
+    }
