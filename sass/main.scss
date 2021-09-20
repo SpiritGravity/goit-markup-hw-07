@@ -1,20 +1,23 @@
 
 @import './base/reset'; 
 @import './base/container';
-@import './components/btn';
 @import './base/section';
-@import './utils/hidden'; 
-@import './utils/vars';
-@import './utils/animations';
+
+@import './components/backdrop';
+@import './components/portfolio';
+@import './components/btn';
+
+@import './layout/clients';
 @import './layout/header';
 @import './layout/hero';
 @import './layout//team';
-@import './layout/clients';
 @import './layout/footer';
 @import './layout/modal';
 @import './layout/features';
 @import './layout/what-we-do';
-@import './components/backdrop';
-@import './components/portfolio';
+
+@import './utils/hidden'; 
+@import './utils/vars';
+@import './utils/animations';
 
 
