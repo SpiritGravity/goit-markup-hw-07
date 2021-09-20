@@ -1,4 +1,4 @@
-.features-content {
+.features-list__content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
 
     margin-bottom: 30px;
 }
-.features-icon {
+.features-list__icon {
     fill: #AFB1B8;
 }
 .features .section {
@@ -25,7 +25,7 @@
     display: flex;
     padding: 0;
 }
-.features-item {
+.features-pre-list__item {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.36;
@@ -34,7 +34,7 @@
     color: #212121;
     margin-bottom: 10px;
 }
-.features-description {
+.features-list__description {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;

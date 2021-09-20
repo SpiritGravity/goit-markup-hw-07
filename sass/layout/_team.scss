@@ -1,13 +1,14 @@
 .team {
     background-color: #F5F4FA;
 }
-
 .team-list {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    align-content: center;
+    padding: 0;
 }
-
 .team-title {
     font-weight: bold;
     font-size: 36px;
@@ -21,16 +22,7 @@
     margin: 0;
     display: block;
 }
-
-.team-list {
-    display: flex;
-    flex-wrap: nowrap;
-    list-style: none;
-    align-content: center;
-    padding: 0;
-}
-
-.team-link {
+.team-list__link {
     text-decoration: none;
     background-color: #fff;
     border-radius: 0px 0px 4px 4px;
@@ -42,18 +34,12 @@
         margin-right: 30px;
     }
 }
-
-.team-description {
+.team-list__description {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: inherit;
-
 }
-.team-position {
-    margin-top: 10px;
-
-}
-.team-name {
+.team-list__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -61,24 +47,26 @@
     letter-spacing: 0.03em;
     color: #212121;
 }
-.team-position {
+.team-list__position {
     font-weight: normal;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+
+    margin-top: 10px;
 }
-.team-social-network {
+.social-list {
     display: flex;
     justify-content: center;
     margin-top: 16px;
     /* padding-bottom: 30px; */
 }
-.social-item:not(:last-child) {
+.social-list__item:not(:last-child) {
     margin-right: 10px;
     }
-.social-link {
+.social-list__link {
     width: 44px;
     height: 44px;
     /* width: 100%;
@@ -97,8 +85,7 @@
     background-color: var(--accent-color);
 }
 } 
-.social-icon,
-.social-icon {
+.social-list__icon {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,10 +94,8 @@
     width: 20px;
     height: 20px;
 
-    .social-link:hover &,
-    .social-link:focus & {
+    .social-list__link:hover &,
+    .social-list__link:focus & {
         fill: #fff;
     }
-} 
-
-
+}

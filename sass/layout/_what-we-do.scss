@@ -1,7 +1,7 @@
-.what-we-do-sctn  {
+.what-we-do  {
     padding-bottom: 94px;
 }
-.what-we-do-title {
+.what-we-do__title {
     display: center;
     font-weight: bold;
     text-align: center;
@@ -11,7 +11,7 @@
     color: #212121;
     margin-bottom: 50;
 }
-.what-we-do-link {
+.what-we-do__link {
     text-decoration: none;
     width: 370px;
 
@@ -19,12 +19,17 @@
         margin-right: 30px;
     }
 }
-
-.what-we-do {
+.what-we-do__list {
+    display: flex;
     list-style: none;
     margin-top: 50px;
+
 }
-.what-we-do-item {
+// .what-we-do {
+//     list-style: none;
+//     margin-top: 50px;
+// }
+.what-we-do__item {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -34,11 +39,11 @@
     
     color: #FFFFFF;
 }
-.what-we-do-box {
+.what-we-do__box {
     position: relative;
 }
 
-.what-we-do-text {
+.what-we-do__text {
     position: absolute;
     display: flex;
     align-items: center;
@@ -48,6 +53,6 @@
     bottom: 0;
     background: rgba(47, 48, 58, 0.8);
 }
-.what-we-do  {
-    display: flex;
-}
+// .what-we-do  {
+//     display: flex;
+// }

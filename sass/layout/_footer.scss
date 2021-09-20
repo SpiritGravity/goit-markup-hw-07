@@ -19,12 +19,12 @@
     display: flex;
     justify-content: center;
 }
-.footer-social-item {
+.footer-social-logo__item {
     &:not(:last-child) {
         margin-right: 10px;
     }    
 }
-.footer-social-link {
+.footer-social-logo__link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -42,7 +42,7 @@
         background-color: #2196F3;
     }
 }
-.footer-social-icon {
+.footer-social-logo__icon {
     fill: #fff;
 }
 
@@ -78,7 +78,7 @@
     margin-top: 20px;
 }
 
-.footer-address {
+.footer-list__address {
     display: flex;
     flex-wrap: nowrap;
     text-decoration: none;
@@ -94,12 +94,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-tel {
+.footer-list__tel {
     display: flex;
     margin-top: 9px;
 }
-.footer-mail,
-.footer-tel
+.footer-list__mail,
+.footer-list__tel
 {  text-decoration: none;
     font-weight: normal;
     font-size: 14px;
